@@ -15,7 +15,7 @@ stage('git checkout') {
 stage('docker build'){
     steps{
         sh 'docker build -t a-cicd .'
-        'docker images'
+        sh 'docker images'
 
     }
 }
